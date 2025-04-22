@@ -18,6 +18,8 @@ The DesiredFontName can be anything, just keep it in mind to load it later on.
 
 ### Multiple fonts at once
 ```rust
+use egui_font_loader::LoaderFontData;
+use egui_font_loader::load_fonts;
 let fonts = vec![
     LoaderFontData {
         name: "DesiredFontName".into(),
