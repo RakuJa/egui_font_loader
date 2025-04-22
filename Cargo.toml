@@ -1,0 +1,35 @@
+
+[package]
+name = "egui_font_loader"
+version = "0.0.1"
+authors = ["RakuJa"]
+
+# Compiler info
+edition = "2024"
+rust-version = "1.86.0"
+
+description = "Egui simple font loader"
+readme = "README.md"
+repository = "https://github.com/RakuJa/egui_font_loader"
+license = "MIT"
+keywords = ["egui", "font", "loader"]
+publish = true
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+struct_field_names = { level = "allow", priority = 2 }
+module_name_repetitions = { level = "allow", priority = 2 }
+cast_possible_truncation = { level = "allow", priority = 2 }
+cast_precision_loss = { level = "allow", priority = 2 }
+
+future_not_send = { level = "allow", priority = 2 }
+
+pedantic = { level = "warn", priority = 1 }
+nursery = { level = "warn", priority = 1 }
+# unwrap_used = {level = "warn", priority = 1}
+
+[dependencies]
+anyhow = "1"
+egui = "0"
