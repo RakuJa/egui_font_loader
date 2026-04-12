@@ -1,6 +1,25 @@
 # egui_font_loader
 A simple library to simplify egui font loading
 
+## Installation
+Add `egui_font_loader` to your `Cargo.toml` dependencies:
+```toml
+[dependencies]
+egui_font_loader = "0.34.1"
+```
+### Dependency version conflict (Hacky solution)
+It may happen that you want to use `egui_font_loader` with a `egui` version that clashes and for which there are no `egui_font_loader` version published. It's pretty safe to modify the `Cargo.lock` to force `egui_font_loader` to resolve to another `egui` version.
+```toml
+[[package]]
+name = "egui_font_loader"
+version = "0.34.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1b605b1e1794d96262ddffc1320e237985cf9de56c37238d506d00f6cd9bdbd4"
+dependencies = [
+ "egui",
+ "thiserror 2.0.18",
+]
+```
 
 ## How to load fonts
 
