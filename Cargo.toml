@@ -1,12 +1,12 @@
 
 [package]
 name = "egui_font_loader"
-version = "0.34.3"
+version = "0.35.0"
 authors = ["RakuJa"]
 
 # Compiler info
 edition = "2024"
-rust-version = "1.86.0"
+rust-version = "1.92.0"
 
 description = "Egui simple font loader"
 readme = "README.md"
@@ -32,4 +32,4 @@ nursery = { level = "warn", priority = 1 }
 
 [dependencies]
 thiserror = "2"
-egui = "0.34.3"
+egui = "0.35.0"
